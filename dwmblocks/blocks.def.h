@@ -2,7 +2,7 @@
 static const Block blocks[] = {
 	/*Icon*/	/*Command*/		/*Update Interval*/	/*Update Signal*/
 	{"  ", "free -h | awk '/^Mem/ { print $3\"/\"$2 }' | sed s/i//g",	30,		0},
-	{"  ", " df -h / | grep \"/dev/nvme0n1p1\" | awk -F \" \" \'{print $2 \"/\" $3}\'",	30,		0},
+	{"  ", " df -h / | grep \"/\" | awk -F \" \" \'{print $2 \"/\" $3}\'",	30,		0},
 	{" ", "battery_percent",					                        20, 	0},
 	{" ", "volume",					                                    0,		10},
 	{"  ", "date '+%a %b %d'",                         				5,		0},
