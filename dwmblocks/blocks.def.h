@@ -9,5 +9,5 @@ static const Block blocks[] = {
 	{"  ", "date '+%H:%M'",				                            5,		0},
 };
 //sets delimeter between status commands. NULL character ('\0') means no delimeter.
-static char delim[] = " | ";
+static char delim[] = " \0 ";
 static unsigned int delimLen = 5;
